@@ -12,7 +12,7 @@ AI/LLM security offensive checklist: prompt injection, jailbreaking, model extra
 Use this skill when the conversation involves any of:
 `AI security, LLM security, prompt injection, jailbreak, model extraction, training data poisoning, adversarial input, AI red team, ML security, RAG poisoning, AI attack`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

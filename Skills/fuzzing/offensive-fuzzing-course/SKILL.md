@@ -12,7 +12,7 @@ Week 2 of the exploit development curriculum. Covers fuzzing methodology: target
 Use this skill when the conversation involves any of:
 `fuzzing curriculum, AFL++, libFuzzer, coverage-guided fuzzing, corpus generation, harness, fuzz target, mutation, triage, crash dedup, week 2, exploit dev course`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

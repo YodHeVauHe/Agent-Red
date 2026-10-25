@@ -12,7 +12,7 @@ OAuth 2.0 attack checklist: authorization code interception, redirect_uri bypass
 Use this skill when the conversation involves any of:
 `OAuth, OAuth 2.0, authorization code, redirect_uri bypass, OAuth CSRF, state parameter, PKCE bypass, scope escalation, token leakage, open redirector, OAuth attack`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

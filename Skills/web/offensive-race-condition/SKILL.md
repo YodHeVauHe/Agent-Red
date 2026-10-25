@@ -12,7 +12,7 @@ Race condition (TOCTOU) testing checklist: identifying timing windows, Burp Suit
 Use this skill when the conversation involves any of:
 `race condition, TOCTOU, timing attack, Turbo Intruder, last-byte sync, rate limit bypass, double spend, concurrent request, race window, time of check, time of use`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

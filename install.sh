@@ -1,22 +1,22 @@
 #!/usr/bin/env bash
-# claude-red installer
-# Copies offensive security skills into a Claude skills directory.
+# agent-red installer
+# Copies offensive security skills into any agent skills directory.
 #
 # Usage:
 #   ./install.sh                                # interactive (asks for target)
-#   ./install.sh --target ~/.claude/skills      # explicit target
+#   ./install.sh --target ~/.agents/skills    # explicit target
 #   ./install.sh --category web                 # one category only
 #   ./install.sh --target DIR --category web    # combined
 #   ./install.sh --list                         # list available categories
 #   ./install.sh --dry-run                      # show what would be copied
 #
-# Default target: ~/.claude/skills/claude-red
+# Default target: ~/.agents/skills/agent-red
 
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILLS_DIR="$SCRIPT_DIR/Skills"
-DEFAULT_TARGET="${HOME}/.claude/skills/claude-red"
+DEFAULT_TARGET="${HOME}/.agents/skills/agent-red"
 
 TARGET=""
 CATEGORY=""
@@ -105,4 +105,4 @@ fi
 skill_count=$(find "$DEST" -name SKILL.md | wc -l | tr -d ' ')
 echo
 echo "Installed $skill_count skill(s) to $DEST"
-echo "Claude should now auto-discover them on next session start."
+echo "Your agent should now auto-discover them on next session start."

@@ -12,7 +12,7 @@ Remote Code Execution testing checklist: OS command injection, SSTI-to-RCE, dese
 Use this skill when the conversation involves any of:
 `RCE, remote code execution, command injection, OS injection, SSTI RCE, deserialization RCE, file upload RCE, XXE RCE, dependency confusion, code execution`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

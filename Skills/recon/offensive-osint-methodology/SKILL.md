@@ -12,7 +12,7 @@ Structured OSINT methodology framework: target definition, source selection, col
 Use this skill when the conversation involves any of:
 `OSINT methodology, open source intelligence, target profiling, data correlation, OSINT workflow, intelligence collection, OSINT campaign, recon methodology`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

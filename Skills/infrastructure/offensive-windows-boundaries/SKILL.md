@@ -12,7 +12,7 @@ Windows security boundary taxonomy and attack surface enumeration: kernel/user b
 Use this skill when the conversation involves any of:
 `Windows boundaries, security boundary, kernel user boundary, sandbox escape, AppContainer, LPAC, COM boundary, RPC boundary, hypervisor, Hyper-V, privilege escalation, trust level`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

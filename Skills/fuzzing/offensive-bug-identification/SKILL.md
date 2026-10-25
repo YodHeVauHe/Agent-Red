@@ -12,7 +12,7 @@ Systematic bug identification methodology: source code review patterns, black-bo
 Use this skill when the conversation involves any of:
 `bug identification, code review, taint analysis, dangerous functions, data flow, source audit, black box, vulnerability identification, static analysis, code audit, bug hunting`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

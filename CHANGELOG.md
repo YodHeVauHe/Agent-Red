@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `claude-red` are documented here. The library follows a phased roadmap (see [README.md](README.md#roadmap)). Versions follow [Semantic Versioning](https://semver.org/) where breaking changes mean skill renames, removals, or category restructures.
+All notable changes to `agent-red` are documented here. The library follows a phased roadmap (see [README.md](README.md#roadmap)). Versions follow [Semantic Versioning](https://semver.org/) where breaking changes mean skill renames, removals, or category restructures.
 
 ## [Unreleased]
 
@@ -42,7 +42,7 @@ All notable changes to `claude-red` are documented here. The library follows a p
 
 - README updated with 10 new category sections, badge counts (58 to 78 skills, 13 to 23 categories), expanded roadmap
 - CHANGELOG updated with v0.3.0 section
-- `claude-skills.json` manifest regenerated
+- `agent-skills.json` manifest regenerated
 
 ## [0.2.0] — 2025-05
 
@@ -69,8 +69,8 @@ All notable changes to `claude-red` are documented here. The library follows a p
 - `LICENSE` — MIT (was claimed in README, file now present)
 - `CONTRIBUTING.md` — skill format, frontmatter standard, review process
 - `CHANGELOG.md` — this file
-- `claude-skills.json` — machine-readable manifest of all skills
-- `install.sh` — installer that copies skills into the Claude skills path
+- `agent-skills.json` — machine-readable manifest of all skills
+- `install.sh` — installer that copies skills into an agent skills path
 
 ## [0.1.0] — 2024
 

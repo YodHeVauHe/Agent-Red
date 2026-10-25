@@ -12,7 +12,7 @@ Speed-optimized offensive checklist for rapid assessment: quick-win vulnerabilit
 Use this skill when the conversation involves any of:
 `fast check, quick recon, rapid assessment, quick wins, fast triage, speed checklist, time-boxed, CTF, fast scan, quick vulnerability`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

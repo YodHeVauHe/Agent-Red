@@ -12,7 +12,7 @@ HTTP request smuggling checklist: CL.TE, TE.CL, TE.TE variants, detection with t
 Use this skill when the conversation involves any of:
 `request smuggling, HTTP smuggling, CL.TE, TE.CL, TE.TE, HTTP/2 smuggling, cache poisoning, WAF bypass, differential response, smuggling detection, proxy desync`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate claude-skills.json manifest from Skills/ tree.
+"""Generate agent-skills.json manifest from Skills/ tree.
 
 Reads YAML frontmatter from each SKILL.md and emits a compact JSON manifest
 of all skills, grouped by category, for tooling that needs a machine-readable
@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS_DIR = ROOT / "Skills"
-OUT = ROOT / "claude-skills.json"
+OUT = ROOT / "agent-skills.json"
 
 FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---", re.DOTALL)
 
@@ -52,10 +52,10 @@ def main() -> int:
         return 1
 
     manifest: dict = {
-        "name": "claude-red",
+        "name": "agent-red",
         "version": "0.3.0",
         "license": "MIT",
-        "homepage": "https://github.com/SnailSploit/claude-red",
+        "homepage": "https://github.com/SnailSploit/agent-red",
         "categories": {},
         "skills": [],
     }

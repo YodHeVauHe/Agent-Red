@@ -12,7 +12,7 @@ Initial access techniques checklist: phishing (spear/smishing), credential stuff
 Use this skill when the conversation involves any of:
 `initial access, phishing, spear phishing, credential stuffing, exposed service, supply chain, watering hole, VPN brute force, RDP attack, MITRE TA0001, initial foothold`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

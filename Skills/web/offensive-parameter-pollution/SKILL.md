@@ -12,7 +12,7 @@ HTTP parameter pollution (HPP) checklist: duplicate parameter injection, backend
 Use this skill when the conversation involves any of:
 `parameter pollution, HTTP parameter pollution, HPP, duplicate parameter, WAF bypass, parsing differences, server-side HPP, client-side HPP, parameter injection`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

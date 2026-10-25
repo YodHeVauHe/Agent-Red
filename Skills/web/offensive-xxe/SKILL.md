@@ -12,7 +12,7 @@ XML External Entity injection testing checklist: classic XXE, blind XXE (out-of-
 Use this skill when the conversation involves any of:
 `XXE, XML external entity, blind XXE, out-of-band XXE, XXE file upload, SVG XXE, SOAP XXE, XInclude, entity bypass, XXE SSRF, XXE file read`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

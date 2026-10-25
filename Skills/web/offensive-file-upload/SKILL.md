@@ -12,7 +12,7 @@ File upload vulnerability checklist: MIME type bypass, extension bypass, magic b
 Use this skill when the conversation involves any of:
 `file upload, MIME bypass, extension bypass, magic byte, path traversal upload, SVG XSS, polyglot, upload bypass, malicious upload, web shell upload`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

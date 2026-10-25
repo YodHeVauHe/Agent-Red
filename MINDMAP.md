@@ -1,4 +1,4 @@
-# claude-red — Library Mindmap
+# agent-red — Library Mindmap
 
 A visual map of every skill in the library, by category. Use it to navigate, to discover skills you didn't know existed, and to spot coverage gaps before an engagement.
 
@@ -10,7 +10,7 @@ References for completeness checking: [MITRE ATT&CK](https://attack.mitre.org/),
 
 ```mermaid
 mindmap
-  root((claude-red))
+  root((agent-red))
     Web
       sqli
       xss
@@ -212,5 +212,5 @@ Use this table to confirm coverage of common offensive surfaces. If a row has no
 ## How to Use the Mindmap
 
 - **Pre-engagement:** Walk the relevant category branch and confirm a skill exists per surface in scope. Gaps you spot here are gaps in the engagement plan.
-- **During engagement:** Click into the category for the surface you're testing; load only those skills into Claude.
+- **During engagement:** Click into the category for the surface you're testing; load only those skills into your agent.
 - **Post-engagement:** Cross-check findings against the relevant Mindmap branches to ensure no surface was skipped.

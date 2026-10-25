@@ -1,17 +1,16 @@
-![claude-red banner](/assets/banner.png)
+![agent-red banner](/assets/banner.png)
 
 <div align="center">
 
-# claude-red
+# agent-red
 
-**Offensive security skills for Claude — drop-in `SKILL.md` files that turn Claude into a context-aware red team operator.**
+**Offensive security skills for any agent — drop-in `SKILL.md` files that turn your agent into a context-aware red team operator.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-78-red.svg)](#skill-index)
 [![Categories](https://img.shields.io/badge/categories-23-orange.svg)](#categories)
-[![Stars](https://img.shields.io/github/stars/SnailSploit/claude-red?style=social)](https://github.com/SnailSploit/claude-red)
-[![Forks](https://img.shields.io/github/forks/SnailSploit/claude-red?style=social)](https://github.com/SnailSploit/claude-red/network/members)
-<a href="https://trendshift.io/repositories/40579?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-40579" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/40579/weekly?language=Python" alt="SnailSploit%2FClaude-Red | Trendshift" width="250" height="55"/></a>
+[![Stars](https://img.shields.io/github/stars/YodHeVauHe/Agent-Red?style=social)](https://github.com/YodHeVauHe/Agent-Red)
+[![Forks](https://img.shields.io/github/forks/YodHeVauHe/Agent-Red?style=social)](https://github.com/YodHeVauHe/Agent-Red/network/members)
 
 [Overview](#overview) &bull; [Quickstart](#quickstart) &bull; [Categories](#categories) &bull; [Skill Index](#skill-index) &bull; [Roadmap](#roadmap) &bull; [Contributing](#contributing)
 
@@ -21,33 +20,42 @@
 
 ## Overview
 
-`claude-red` is a curated library of offensive security skills for the [Claude Skills system](https://docs.claude.com). Each skill is a structured `SKILL.md` file that primes Claude with expert-level methodology for a specific attack surface — from SQL injection to shellcode, EDR evasion to ADCS abuse.
+`agent-red` is a curated library of offensive security skills for agent skill systems — Claude Code, ZCode, Codex, Cursor, and any other agent that loads `SKILL.md` files. Each skill is a structured `SKILL.md` file that primes the agent with expert-level methodology for a specific attack surface — from SQL injection to shellcode, EDR evasion to ADCS abuse.
 
-Drop a skill into your Claude environment and it behaves like a domain specialist: it knows the techniques, the tooling, the edge cases, and the escalation paths. Skills load on demand based on conversational triggers — you don't pay context for skills you aren't using.
+Drop a skill into your agent's skills directory and it behaves like a domain specialist: it knows the techniques, the tooling, the edge cases, and the escalation paths. Skills load on demand based on conversational triggers — you don't pay context for skills you aren't using.
 
 **Use cases:** authorized red team engagements, bug bounty triage, security research, CTF preparation, operator training, and methodical attack surface exploration.
 
-**for our actual research using skills -> https://snailsploit.com**
 ---
 
 ## Quickstart
 
-### Claude Skills System (Recommended)
+### Agent Skills Directory (Recommended)
+
+Clone straight into the portable agent skills path — picked up by Claude Code, ZCode, Codex, and other Agent Skills-compatible runtimes:
 
 ```bash
-git clone https://github.com/SnailSploit/claude-red ~/.claude/skills/claude-red
+git clone https://github.com/YodHeVauHe/Agent-Red ~/.agents/skills/agent-red
 ```
 
-Claude auto-loads matching skills based on conversational triggers (e.g., mentioning SQL injection loads `offensive-sqli`).
+Per-agent skills paths if you want the skills flat at the top level:
+
+| Agent | Skills path |
+|---|---|
+| Claude Code | `~/.claude/skills/` |
+| ZCode | `~/.zcode/skills/` |
+| Portable (any agent) | `~/.agents/skills/` |
+
+The agent auto-loads matching skills based on conversational triggers (e.g., mentioning SQL injection loads `offensive-sqli`).
 
 To install a single category:
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/SnailSploit/claude-red
-cd claude-red && git sparse-checkout set Skills/web Skills/active-directory
+git clone --filter=blob:none --sparse https://github.com/YodHeVauHe/Agent-Red
+cd Agent-Red && git sparse-checkout set Skills/recon Skills/web
 ```
 
-### Claude Code
+### Claude Code CLI
 
 ```bash
 cat Skills/web/offensive-sqli/SKILL.md | claude --system-file -
@@ -55,16 +63,18 @@ cat Skills/web/offensive-sqli/SKILL.md | claude --system-file -
 cat Skills/active-directory/**/SKILL.md | claude --system-file -
 ```
 
-### Claude.ai (Manual)
+### Any Chat Agent (Manual)
 
 Paste the contents of a `SKILL.md` into a Project's system prompt or prepend it to your conversation.
 
 ### Install Script
 
 ```bash
-./install.sh                           # interactive
-./install.sh --target ~/.claude/skills # explicit target
-./install.sh --category web            # single category
+./install.sh                                # interactive
+./install.sh --target ~/.agents/skills      # explicit target
+./install.sh --target ~/.claude/skills      # Claude Code
+./install.sh --target ~/.zcode/skills       # ZCode
+./install.sh --category recon               # single category
 ```
 
 ---
@@ -380,7 +390,7 @@ Contributions welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the skill temp
 
 <div align="center">
 
-*Give Claude the right skill and it stops being a chatbot — it becomes an operator.*
+*Give an agent the right skill and it stops being a chatbot — it becomes an operator.*
 
 [snailsploit.com](https://snailsploit.com) &bull; [GitHub](https://github.com/SnailSploit) &bull; [Research](https://snailsploit.com/research) &bull; [X](https://x.com/SnailSploit)
 

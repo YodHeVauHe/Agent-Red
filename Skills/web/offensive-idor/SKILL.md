@@ -12,7 +12,7 @@ IDOR (Insecure Direct Object Reference) testing checklist: object ID enumeration
 Use this skill when the conversation involves any of:
 `IDOR, insecure direct object reference, horizontal privilege escalation, vertical privilege escalation, object enumeration, GUID, API IDOR, mass assignment, broken access control`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

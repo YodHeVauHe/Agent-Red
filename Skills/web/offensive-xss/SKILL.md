@@ -12,7 +12,7 @@ Cross-Site Scripting testing checklist: stored/reflected/DOM/blind XSS discovery
 Use this skill when the conversation involves any of:
 `XSS, cross-site scripting, stored XSS, reflected XSS, DOM XSS, blind XSS, CSP bypass, XSS filter bypass, polyglot, DOM clobbering, mutation XSS, event handler injection`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

@@ -1,8 +1,8 @@
 {
-  "name": "claude-red",
+  "name": "agent-red",
   "version": "0.3.0",
   "license": "MIT",
-  "homepage": "https://github.com/SnailSploit/claude-red",
+  "homepage": "https://github.com/SnailSploit/agent-red",
   "categories": {
     "active-directory": [
       "offensive-active-directory"

@@ -12,7 +12,7 @@ WAF bypass techniques checklist: encoding bypass (URL/HTML/Unicode/double encodi
 Use this skill when the conversation involves any of:
 `WAF bypass, web application firewall bypass, URL encoding, double encoding, Unicode bypass, comment injection, HTTP header bypass, chunked encoding, IP rotation, payload obfuscation, WAF evasion`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

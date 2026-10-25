@@ -12,7 +12,7 @@ Low-level keylogger architecture design: kernel driver hooks (WH_KEYBOARD_LL, Se
 Use this skill when the conversation involves any of:
 `keylogger, keyboard hook, WH_KEYBOARD_LL, SetWindowsHookEx, ETW, kernel driver, input capture, low-level keylogger, malware architecture, stealth, exfiltration`
 
-## Instructions for Claude
+## Instructions for the Agent
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

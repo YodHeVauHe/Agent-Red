@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Claude Skills Converter v4
+Agent Skills Converter v4
 Parser específico para formato Markdown con ## headers y - **Field**: value
 name = folder value (no skill name)
 """
@@ -49,9 +49,9 @@ def parse_skill(content: str, file_path: Path) -> dict:
                 state = 'DESCRIPTION'
             elif section == 'trigger phrases':
                 state = 'TRIGGER'
-            elif section == 'instructions for claude':
+            elif section == 'instructions for the agent':
                 state = 'BODY'
-                meta['body'].append('# Instructions for Claude')
+                meta['body'].append('# Instructions for the Agent')
             elif section == 'full methodology':
                 state = 'BODY'
                 meta['body'].append('## Full Methodology')
@@ -95,7 +95,7 @@ def parse_skill(content: str, file_path: Path) -> dict:
     if not meta['description']:
         meta['description'] = 'Sin descripción disponible.'
     
-    meta['body'] = '\n'.join(meta['body']) if meta['body'] else '# Instructions for Claude\n[Contenido no parseado]'
+    meta['body'] = '\n'.join(meta['body']) if meta['body'] else '# Instructions for the Agent\n[Contenido no parseado]'
     
     # Fallback: si no hay folder, usar nombre de carpeta del archivo
     if not meta['name']:
@@ -176,7 +176,7 @@ def create_zips(conv_dir: Path, zip_dir: Path):
             print(f"📦 {zp.name}")
 
 def main():
-    print("🚀 Claude Skills Converter v4 - Formato Markdown ##\n")
+    print("🚀 Agent Skills Converter v4 - Formato Markdown ##\n")
     
     in_dir, out_dir, zip_dir = INPUT_DIR, OUTPUT_DIR, ZIP_DIR
     if not in_dir.exists():
@@ -205,7 +205,7 @@ def main():
         print(f"\n✨ {ok}/{len(files)} skills convertidas exitosamente.")
         print(f"📁 Skills: {out_dir.resolve()}")
         print(f"🗜️  ZIPs: {zip_dir.resolve()}")
-        print(f"\n📋 Para subir a Claude Console:")
+        print(f"\n📋 Para subir a la consola de tu agente:")
         print(f"   • Cada ZIP contiene: [folder-name]/SKILL.md")
         print(f"   • El 'name' en YAML = nombre de la carpeta dentro del ZIP")
     else:
