@@ -2,6 +2,8 @@
 
 Thanks for contributing. This guide explains the skill format, the review process, and the conventions to keep the library coherent as it grows.
 
+**Pull requests should target [YodHeVauHe/Agent-Red](https://github.com/YodHeVauHe/Agent-Red), branch `main`.** Upstream development continues at [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) — this fork is where Agent Red changes land.
+
 ## Quick Rules
 
 1. **One skill, one surface.** Prefer focused skills (`offensive-kerberoasting`) over monolithic overviews (`offensive-active-directory`).
@@ -89,11 +91,8 @@ The `description` is what the agent matches against. Make it dense with relevant
 3. Write the frontmatter and body following the structure above.
 4. Update [`README.md`](README.md) — add the skill to the relevant category table.
 5. Update [`CHANGELOG.md`](CHANGELOG.md) under the next version.
-6. Update [`agent-skills.json`](agent-skills.json) if it exists (run `python tools/build_manifest.py` if available).
-7. Run any local lint:
-   ```bash
-   ./tools/check-skill.sh Skills/<category>/<skill-name>/SKILL.md
-   ```
+6. Update [`agent-skills.json`](agent-skills.json) (run `python tools/build_manifest.py`).
+7. If you touch `install.sh` or anything executable, smoke-test it with `--dry-run` or `--list` before submitting.
 
 ## Modifying an Existing Skill
 
@@ -137,4 +136,4 @@ Expect one round of review. Maintainers may request edits before merging.
 
 ## Questions
 
-Open a GitHub Discussion before a large PR so the maintainers can confirm the direction. For sensitive findings (a leaked credential in an example, etc.), see [SECURITY.md](SECURITY.md).
+Open an issue before a large PR so the maintainer can confirm the direction. For sensitive findings (a leaked credential in an example, etc.), see [SECURITY.md](SECURITY.md).

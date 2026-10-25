@@ -17,7 +17,7 @@ These skills are **not** intended for unauthorized access to systems you do not 
 
 If you discover a security issue in this repository — for example a malicious payload accidentally committed, a credential leaked in an example, a typosquat-prone install path, or an unsafe shell command in `install.sh` — please report it privately rather than opening a public issue.
 
-**Contact:** security@snailsploit.com
+**Contact:** [Report a vulnerability](https://github.com/YodHeVauHe/Agent-Red/security/advisories/new) via GitHub private vulnerability reporting on this repository, or contact the maintainer [@YodHeVauHe](https://github.com/YodHeVauHe) directly.
 
 Please include:
 
@@ -41,13 +41,9 @@ If the vendor has no published security contact:
 
 ## Supply Chain Integrity
 
-This repository is signed by SnailSploit. Verify commit signatures with:
+This fork is maintained by [YodHeVauHe](https://github.com/YodHeVauHe). Treat the commit history on `main` of [YodHeVauHe/Agent-Red](https://github.com/YodHeVauHe/Agent-Red) as the source of truth; the upstream lineage is [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red).
 
-```bash
-git log --show-signature
-```
-
-If you receive a `agent-red` archive from a third party (mirror, pastebin, package manager), verify it against the upstream repository before using.
+If you receive an `agent-red` archive from a third party (mirror, pastebin, package manager), verify it against this repository before using.
 
 ## Scope
 
