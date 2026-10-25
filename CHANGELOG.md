@@ -2,6 +2,18 @@
 
 All notable changes to `agent-red` are documented here. The library follows a phased roadmap (see [README.md](README.md#roadmap)). Versions follow [Semantic Versioning](https://semver.org/) where breaking changes mean skill renames, removals, or category restructures.
 
+## [1.0.0] — 2026-10-26
+
+Forked from [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) and rebranded as **Agent Red**, an agent-agnostic offensive security skills library.
+
+### Changed
+
+- Library renamed `claude-red` → `agent-red`; repository renamed to `YodHeVauHe/Agent-Red`
+- Skill instruction headers rewritten agent-agnostically (`## Instructions for Claude` → `## Instructions for the Agent`) across all skills
+- README restructured: multi-agent installation paths (Claude Code, ZCode, Codex, portable `~/.agents/skills`) and a dedicated Usage section
+- `install.sh` defaults to `~/.agents/skills/agent-red`; `claude-skills.json` renamed to `agent-skills.json` and regenerated to index all 79 skills
+- New branding: minimal banner, updated repository description and metadata
+
 ## [Unreleased]
 
 ### Changed

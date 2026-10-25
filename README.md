@@ -1,18 +1,17 @@
-![agent-red banner](/assets/banner.png)
-
 <div align="center">
+  <img src="assets/banner.png" alt="Agent Red — offensive security skills for AI agents" width="960">
+</div>
 
-# agent-red
+# Agent Red
 
-**Offensive security skills for any agent — drop-in `SKILL.md` files that turn your agent into a context-aware red team operator.**
+**Offensive security skills for AI agents** — curated `SKILL.md` methodology files that turn a general-purpose agent into a domain-specialist red team operator.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-78-red.svg)](#skill-index)
+[![Skills](https://img.shields.io/badge/skills-79-red.svg)](#skill-index)
 [![Categories](https://img.shields.io/badge/categories-23-orange.svg)](#categories)
-[![Stars](https://img.shields.io/github/stars/YodHeVauHe/Agent-Red?style=social)](https://github.com/YodHeVauHe/Agent-Red)
-[![Forks](https://img.shields.io/github/forks/YodHeVauHe/Agent-Red?style=social)](https://github.com/YodHeVauHe/Agent-Red/network/members)
+[![Agents](https://img.shields.io/badge/agents-Claude_Code_·_ZCode_·_Codex-blueviolet)](#installation)
 
-[Overview](#overview) &bull; [Quickstart](#quickstart) &bull; [Categories](#categories) &bull; [Skill Index](#skill-index) &bull; [Roadmap](#roadmap) &bull; [Contributing](#contributing)
+[Overview](#overview) &bull; [Installation](#installation) &bull; [Usage](#usage) &bull; [Categories](#categories) &bull; [Skill Index](#skill-index) &bull; [Roadmap](#roadmap) &bull; [Contributing](#contributing)
 
 </div>
 
@@ -20,25 +19,23 @@
 
 ## Overview
 
-`agent-red` is a curated library of offensive security skills for agent skill systems — Claude Code, ZCode, Codex, Cursor, and any other agent that loads `SKILL.md` files. Each skill is a structured `SKILL.md` file that primes the agent with expert-level methodology for a specific attack surface — from SQL injection to shellcode, EDR evasion to ADCS abuse.
+`agent-red` is a curated library of offensive security skills for agent skill systems — Claude Code, ZCode, Codex, Cursor, and any other runtime that loads Agent Skills `SKILL.md` files.
 
-Drop a skill into your agent's skills directory and it behaves like a domain specialist: it knows the techniques, the tooling, the edge cases, and the escalation paths. Skills load on demand based on conversational triggers — you don't pay context for skills you aren't using.
+Each skill encodes expert-level methodology for a single attack surface — the techniques, the tooling, the edge cases, and the escalation paths — from SQL injection to shellcode, EDR evasion to ADCS abuse. Skills load on demand from conversational triggers, so context is only spent on the domain being worked.
 
-**Use cases:** authorized red team engagements, bug bounty triage, security research, CTF preparation, operator training, and methodical attack surface exploration.
+**Use cases:** authorized red team engagements, penetration testing, bug bounty triage, security research, CTF preparation, and operator training. All techniques are documented for authorized security work only — see [SECURITY.md](SECURITY.md).
 
 ---
 
-## Quickstart
+## Installation
 
-### Agent Skills Directory (Recommended)
-
-Clone straight into the portable agent skills path — picked up by Claude Code, ZCode, Codex, and other Agent Skills-compatible runtimes:
+Clone into the portable agent skills directory — recognized by Claude Code, ZCode, Codex, and other Agent Skills-compatible runtimes:
 
 ```bash
 git clone https://github.com/YodHeVauHe/Agent-Red ~/.agents/skills/agent-red
 ```
 
-Per-agent skills paths if you want the skills flat at the top level:
+Per-agent skills paths for a flat install:
 
 | Agent | Skills path |
 |---|---|
@@ -46,36 +43,33 @@ Per-agent skills paths if you want the skills flat at the top level:
 | ZCode | `~/.zcode/skills/` |
 | Portable (any agent) | `~/.agents/skills/` |
 
-The agent auto-loads matching skills based on conversational triggers (e.g., mentioning SQL injection loads `offensive-sqli`).
+Or use the installer for selective installation:
 
-To install a single category:
+```bash
+./install.sh                            # interactive
+./install.sh --target ~/.claude/skills  # explicit target
+./install.sh --category recon           # single category
+./install.sh --list                     # available categories
+```
+
+To vendor a single category without the full clone:
 
 ```bash
 git clone --filter=blob:none --sparse https://github.com/YodHeVauHe/Agent-Red
 cd Agent-Red && git sparse-checkout set Skills/recon Skills/web
 ```
 
-### Claude Code CLI
+## Usage
+
+Skills load on demand from conversational triggers: mentioning SQL injection engages `offensive-sqli`; asking for OSINT methodology engages `offensive-osint`.
+
+Load a skill explicitly with the Claude Code CLI:
 
 ```bash
-cat Skills/web/offensive-sqli/SKILL.md | claude --system-file -
-
-cat Skills/active-directory/**/SKILL.md | claude --system-file -
+cat Skills/recon/offensive-osint/SKILL.md | claude --system-file -
 ```
 
-### Any Chat Agent (Manual)
-
-Paste the contents of a `SKILL.md` into a Project's system prompt or prepend it to your conversation.
-
-### Install Script
-
-```bash
-./install.sh                                # interactive
-./install.sh --target ~/.agents/skills      # explicit target
-./install.sh --target ~/.claude/skills      # Claude Code
-./install.sh --target ~/.zcode/skills       # ZCode
-./install.sh --category recon               # single category
-```
+With any chat agent, paste the contents of a `SKILL.md` into a project system prompt or prepend it to the conversation.
 
 ---
 
@@ -392,6 +386,6 @@ Contributions welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the skill temp
 
 *Give an agent the right skill and it stops being a chatbot — it becomes an operator.*
 
-[snailsploit.com](https://snailsploit.com) &bull; [GitHub](https://github.com/SnailSploit) &bull; [Research](https://snailsploit.com/research) &bull; [X](https://x.com/SnailSploit)
+[Agent-Red](https://github.com/YodHeVauHe/Agent-Red) &bull; [Issues](https://github.com/YodHeVauHe/Agent-Red/issues) &bull; [Upstream: SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red)
 
 </div>

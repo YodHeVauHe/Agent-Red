@@ -53,9 +53,9 @@ def main() -> int:
 
     manifest: dict = {
         "name": "agent-red",
-        "version": "0.3.0",
+        "version": "1.0.0",
         "license": "MIT",
-        "homepage": "https://github.com/SnailSploit/agent-red",
+        "homepage": "https://github.com/YodHeVauHe/Agent-Red",
         "categories": {},
         "skills": [],
     }
